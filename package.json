@@ -1,0 +1,17 @@
+{
+  "name": "edtech-sending-domain-records",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "publish": "node --experimental-strip-types src/publish-sending-domain.ts",
+    "test": "node --experimental-strip-types --test src/publishing-workflow.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "zod": "^3.24.1"
+  }
+}
